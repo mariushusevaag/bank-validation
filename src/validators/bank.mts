@@ -1,5 +1,5 @@
-import { mod10, mod11 } from "../helpers/mod";
-import { BankSweden } from "../types";
+import { mod10, mod11 } from "../helpers/mod.mjs";
+import { BankSweden } from "../types/index.mjs";
 
 export const validateBankSweden = (number: string, bank: BankSweden) => {
   const clen = bank.clen ? bank.clen : 4;
