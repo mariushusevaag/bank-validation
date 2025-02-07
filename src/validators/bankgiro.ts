@@ -1,5 +1,5 @@
-import { swedish_banks } from "../data/banks.mjs";
-import { validateBankSweden } from "./bank.mjs";
+import { swedish_banks } from "../data/banks.js";
+import { validateBankSweden } from "./bank.js";
 
 export const validateBankgiroSweden = (value: string): boolean => {
   const number = value.replace(/\D/g, "");
