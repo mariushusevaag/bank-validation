@@ -1,7 +1,7 @@
 import { mod10, mod11 } from "../helpers/mod";
-import { Bank } from "../types";
+import { BankSweden } from "../types";
 
-export const validateBank = (number: string, bank: Bank) => {
+export const validateBankSweden = (number: string, bank: BankSweden) => {
   const clen = bank.clen ? bank.clen : 4;
   const clearing = number.slice(0, clen);
   const accnum = number.slice(clen);

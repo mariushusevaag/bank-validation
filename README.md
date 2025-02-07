@@ -1,13 +1,13 @@
-# Bank Validation Sweden Package
+# Bank Validation Package
 
-This package provides validation functions for bank, bankgiro, ocr & plusgiro validation in Sweden. It is designed to be simple and easy to use, ensuring that the data you work with meets the necessary criteria.
+This package provides validation functions for bank, bankgiro, ocr, plusgiro, etc. It is designed to be simple and easy to use, ensuring that the data you work with meets the necessary criteria.
 
 ## Installation
 
 To install the validation package, use npm:
 
 ```bash
-npm install bank-validation
+npm install @stacc/bank-validation
 ```
 
 ## Usage
@@ -15,17 +15,17 @@ npm install bank-validation
 You can import the validation functions as follows:
 
 ```typescript
-import { validateOcr } from "bank-validation";
+import { validateOcrSweden } from "bank-validation";
 ```
 
-### validateBank
+### validateBankSweden
 
 This function validates banks based on special criterias.
 
 **Example:**
 
 ```typescript
-const bank: Bank = {
+const bank: BankSweden = {
   name: "Bank Name",
   regex: "^[0-9]{8}$",
   type: 1
@@ -33,19 +33,41 @@ const bank: Bank = {
   mod10: true
   clen: 2
 };
-const isValid = validateBank("123456789", bank);
+const isValid = validateBankSweden("123456789", bank);
 console.log(isValid); // true or false
 ```
 
-### validateOcr
+### validateOcrSweden
 
-This function validates OCR data.
+This function validates swedish OCR.
 
 **Example:**
 
 ```typescript
-const isOcrValid = validateOcr("OCR_DATA");
+const isOcrValid = validateOcrSweden('12345');
 console.log(isOcrValid); // true or false
+```
+
+### validatePlusgiroSweden
+
+This function validates swedish plusgiro.
+
+**Example:**
+
+```typescript
+const isPlusgiroValid = validatePlusgiroSweden('00123');
+console.log(isPlusgiroValid); // true or false
+```
+
+### validateBankgiroSweden
+
+This function validates swedish bankgiro.
+
+**Example:**
+
+```typescript
+const isBankgiroValid = validateBankgiroSweden('50680241477');
+console.log(isBankgiroValid); // true or false
 ```
 
 ## Contributing

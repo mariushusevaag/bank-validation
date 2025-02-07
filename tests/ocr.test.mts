@@ -1,22 +1,22 @@
 import { describe, it, expect, vi } from 'vitest';
-import { validateOcr } from '../src';
+import { validateOcrSweden } from '../src';
 
-describe('validateOcr', () => {
+describe('validateOcrSweden', () => {
   it('should return false for empty string', () => {
-    expect(validateOcr('')).toBe(false);
+    expect(validateOcrSweden('')).toBe(false);
   });
 
   it('should return false for non-digit string', () => {
-    expect(validateOcr('abc')).toBe(false);
-    expect(validateOcr('123abc')).toBe(false);
-    expect(validateOcr('12.34')).toBe(false);
+    expect(validateOcrSweden('abc')).toBe(false);
+    expect(validateOcrSweden('123abc')).toBe(false);
+    expect(validateOcrSweden('12.34')).toBe(false);
   });
 
   it('should call mod10 for digit-only strings', async () => {
     const mockMod10 = vi.spyOn(await import('../src/helpers/mod'), 'mod10')
       .mockImplementation((val) => true);
 
-    validateOcr('12345');
+    validateOcrSweden('12345');
     expect(mockMod10).toHaveBeenCalledWith('12345');
 
     mockMod10.mockRestore();
@@ -26,8 +26,8 @@ describe('validateOcr', () => {
     const mockMod10 = vi.spyOn(await import('../src/helpers/mod'), 'mod10')
       .mockImplementation((val) => val === '12345');
 
-    expect(validateOcr('12345')).toBe(true);
-    expect(validateOcr('54321')).toBe(false);
+    expect(validateOcrSweden('12345')).toBe(true);
+    expect(validateOcrSweden('54321')).toBe(false);
 
     mockMod10.mockRestore();
   });

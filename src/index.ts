@@ -1,4 +1,4 @@
-export { validateOcr } from './validators/ocr';
-export { validatePlusgiro } from './validators/plusgiro';
-export { validateBankgiro } from './validators/bankgiro';
-export { validateBank } from './validators/bank';
+export { validateOcrSweden } from './validators/ocr';
+export { validatePlusgiroSweden } from './validators/plusgiro';
+export { validateBankgiroSweden } from './validators/bankgiro';
+export { validateBankSweden } from './validators/bank';
