@@ -1,6 +1,6 @@
 {
   "name": "@stacc/bank-validation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package for validating banks, accounts numbers, OCR and more.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
