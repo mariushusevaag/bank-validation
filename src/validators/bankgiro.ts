@@ -1,12 +1,12 @@
-import { banks } from "../data/banks";
-import { validateBank } from "./bank";
+import { swedish_banks } from "../data/banks";
+import { validateBankSweden } from "./bank";
 
-export const validateBankgiro = (value: string): boolean => {
+export const validateBankgiroSweden = (value: string): boolean => {
   const number = value.replace(/\D/g, "");
 
-  for (const i in banks) {
-    if (banks[i].regex.test(number)) {
-      return validateBank(number, banks[i]);
+  for (const i in swedish_banks) {
+    if (swedish_banks[i].regex.test(number)) {
+      return validateBankSweden(number, swedish_banks[i]);
     }
   }
 

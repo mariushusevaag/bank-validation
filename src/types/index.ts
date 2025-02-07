@@ -1,4 +1,4 @@
-export type Bank = {
+export type BankSweden = {
   name: string;
   regex: RegExp;
   type?: number;
