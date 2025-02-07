@@ -1,6 +1,6 @@
-import { Bank } from "../types";
+import { BankSweden } from "../types";
 
-export const swedish_banks: Bank[] = [
+export const swedish_banks: BankSweden[] = [
     {
         name: "Svea Bank",
         regex: /^966[0-9]{8}$/,
