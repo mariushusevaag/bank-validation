@@ -1,5 +1,11 @@
 # @stacc/bank-validation
 
+## 1.1.3
+
+### Patch Changes
+
+- 88f08fa: Fix: Change filetypes
+
 ## 1.1.2
 
 ### Patch Changes
