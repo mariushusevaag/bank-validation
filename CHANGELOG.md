@@ -1,5 +1,11 @@
 # @stacc/bank-validation
 
+## 1.1.2
+
+### Patch Changes
+
+- 195d679: Fix: Changed from .ts files to .mts files
+
 ## 1.1.1
 
 ### Patch Changes
