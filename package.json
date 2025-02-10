@@ -22,13 +22,13 @@
     "url": "git+https://github.com/mariushusevaag/bank-validation.git"
   },
   "scripts": {
+    "build": "tsc && tsc --module commonjs --outDir dist/cjs",
+    "changeset": "changeset",
+    "prepublishOnly": "npm run build",
+    "publish-package": "npm run build && changeset publish",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
-    "build": "tsc && tsc --module commonjs --outDir dist/cjs",
-    "prepublishOnly": "npm run build",
-    "changeset": "changeset",
-    "publish": "changeset publish"
+    "test:coverage": "vitest run --coverage"
   },
   "keywords": [
     "validation",
