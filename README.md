@@ -7,7 +7,7 @@ This package provides validation functions for bank, bankgiro, ocr, plusgiro, et
 To install the validation package, use npm:
 
 ```bash
-npm install @stacc/bank-validation
+npm install @husevaag.marius/bank-validation
 ```
 
 ## Usage

@@ -1,32 +1,4 @@
-# @stacc/bank-validation
-
-## 1.1.3
-
-### Patch Changes
-
-- 88f08fa: Fix: Change filetypes
-
-## 1.1.2
-
-### Patch Changes
-
-- 195d679: Fix: Changed from .ts files to .mts files
-
-## 1.1.1
-
-### Patch Changes
-
-- c978828: Fix: Typo
-
-### 1.1.0
-
-- Renamed validation functions to `validateBankSweden`, `validateOcrSweden`, `validatePlusgiroSweden` and `validateBankgiroSweden`
-- Updated README.md
-- Added build step to release workflow
-
-### 1.0.1
-
-- Added Changelog
+# @mariushusevaag/bank-validation
 
 ### 1.0.0
 
