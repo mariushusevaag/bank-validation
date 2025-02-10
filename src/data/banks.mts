@@ -1,4 +1,4 @@
-import { BankSweden } from "../types/index.js";
+import { BankSweden } from "../types/index.mjs";
 
 export const swedish_banks: BankSweden[] = [
     {
