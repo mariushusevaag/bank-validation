@@ -5,12 +5,10 @@ on:
     branches:
       - main
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+# Required for the changeset action to create pull requests
+permissions: write-all
 
-permissions:
-  contents: write
-  pull-requests: write
-  packages: write
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
